@@ -60,7 +60,7 @@ export default function Home() {
       </form>
       <div className='w-96 p-2 bg-stone-200 rounded-md'>{shuffledText ? shuffledText : 'Your shuffled text will show up here when you press the shuffle button'}</div>
       {shuffledText ? <button className='text-sky-600 font-semibold' onClick={() => exportAsTXTFile(shuffledText)}>Download Shuffled Text</button> : null}
-      <footer>Created by <Link href="https://yusuf.fyi">Yusuf Bouzekri</Link>, you can also find me on <Link href="https://twitter.com/greeklynx">Twitter</Link></footer>
+      <footer>Created by <Link className='font-semibold text-sky-600' href="https://yusuf.fyi">Yusuf Bouzekri</Link>, you can also find me on <Link className='font-semibold text-sky-600'  href="https://twitter.com/greeklynx">Twitter</Link></footer>
     </>
   )
 }
