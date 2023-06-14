@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     <>
-      <h1 className='font-sans font-bold text-2xl mt-6'>Yusuf's Spectacular Word Scrambler</h1>
+      <h1 className='font-sans font-bold text-2xl mt-6'>Yusuf&apos;s Spectacular Word Scrambler</h1>
       <form onSubmit={handleSubmit}>
         <textarea
           name="input"
