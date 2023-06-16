@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: "an app that'll shuffle your text for you and allow to download the result",
     siteName: "scrambledeggs.yusuf.fyi",
     locale: "en_US",
+    url: "https://scrambledeggs.yusuf.fyi",
     type: "website"
   },
   twitter: {
