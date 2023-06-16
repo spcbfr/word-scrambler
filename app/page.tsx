@@ -42,12 +42,12 @@ export default function Home() {
   }
 
   return (
-    <>
-      <h1 className='font-sans font-bold text-2xl mt-6'>Yusuf&apos;s Spectacular Word Scrambler</h1>
+    <section className='flex items-center gap-7 flex-col' >
+      <h1 className='font-sans font-bold text-2xl mt-6'>Yusuf&apos;s Spectacular Word Scrambler 🍳👨‍💻</h1>
       <form onSubmit={handleSubmit}>
         <textarea
           name="input"
-          className='p-2 border-0 font-medium'
+          className='p-2 border-0 font-medium bg-stone-200 focus:outline-none focus:ring-2 focus:ring-offset-2 placeholder:text-stone-700 focus:ring-orange-500 resize-none rounded-lg'
           id="input"
           cols={50}
           rows={5}
@@ -59,8 +59,12 @@ export default function Home() {
         <button className='bg-sky-600 p-3 rounded-md text-white font-semibold mt-2' type="submit">Scramble</button>
       </form>
       <div className='w-96 p-2 bg-stone-200 rounded-md'>{shuffledText ? shuffledText : 'Your shuffled text will show up here when you press the shuffle button'}</div>
+
       {shuffledText ? <button className='text-sky-600 font-semibold' onClick={() => exportAsTXTFile(shuffledText)}>Download Shuffled Text</button> : null}
-      <footer>Created by <Link className='font-semibold text-sky-600' href="https://yusuf.fyi">Yusuf Bouzekri</Link>, you can also find me on <Link className='font-semibold text-sky-600'  href="https://twitter.com/greeklynx">Twitter</Link></footer>
-    </>
+      <footer className='text-center'>
+
+        Created by <Link className='font-semibold text-sky-600' href="https://yusuf.fyi">Yusuf Bouzekri</Link>, you can also find me on <Link className='font-semibold text-sky-600'  href="https://twitter.com/spacehiker_">Twitter</Link>
+        <br />alternatively <a href="https://ko-fi.com/spacebuffer" className='font-semibold text-sky-600'>Buy Me a coffee</a> and sponsor my programming journey!</footer>
+    </section>
   )
 }
