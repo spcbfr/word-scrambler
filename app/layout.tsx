@@ -1,5 +1,6 @@
 import './globals.css'
 import { Karla } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
 
 const karla = Karla({ 
   subsets: ['latin'],
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={karla.variable} >
         <main className='font-sans bg-stone-50 h-full flex items-center justify-center caret-orange-400'>
         {children}
+        <Analytics/>
         </main>
       </body>
     </html>
